@@ -1,5 +1,11 @@
 # React + Vite
 
+## Demo request email
+
+The demo form sends email through Resend from the Cloudflare Worker. Verify a sender domain in Resend, then configure `DEMO_FROM_EMAIL` (a verified sender address) and the secret `RESEND_API_KEY` in the Worker environment. Requests are delivered to `support@pathwise.systems` with the visitor's email as the reply-to address. Without these settings, the form reports that delivery is unavailable.
+
+To test the endpoint locally, build the app and run `npx wrangler dev` with `RESEND_API_KEY` and `DEMO_FROM_EMAIL` configured in a local `.dev.vars` file. The Vite-only dev server does not run the Worker. Run validation tests with `node --test tests/demo-request.test.js`.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

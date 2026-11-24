@@ -1,8 +1,14 @@
 {
   "name": "pathwise-landing",
+  "main": "./src/worker.js",
   "compatibility_date": "2026-10-22",
+  "vars": {
+    "DEMO_FROM_EMAIL": "Pathwise Landing <admin@pathwise.systems>"
+  },
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "single-page-application"
+    "not_found_handling": "single-page-application",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
   }
 }

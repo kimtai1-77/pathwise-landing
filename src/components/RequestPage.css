@@ -42,10 +42,10 @@
 	font-weight: 700;
 }
 
+.request-page-form input,
 .request-page-form textarea {
+	box-sizing: border-box;
 	width: 100%;
-	min-height: 230px;
-	resize: vertical;
 	padding: 18px;
 	border: 1px solid var(--nt-200);
 	border-radius: 3px;
@@ -55,9 +55,46 @@
 	line-height: 1.6;
 }
 
+.request-page-form textarea {
+	min-height: 230px;
+	resize: vertical;
+}
+
+.request-page-form input:focus,
 .request-page-form textarea:focus {
 	outline: 2px solid var(--p-300);
 	outline-offset: 2px;
+}
+
+.request-page-form [aria-invalid="true"] {
+	border-color: #b42318;
+}
+
+.request-page-error {
+	color: #b42318;
+	font-size: 13px;
+}
+
+.request-page-status {
+	margin: 0;
+	font-size: 14px;
+}
+
+.request-page-status--success {
+	padding: 12px 16px;
+	border: 1px solid var(--success-200);
+	border-radius: 4px;
+	background: var(--success-100);
+	color: var(--success-500);
+}
+
+.request-page-status--error {
+	color: var(--error-500);
+}
+
+.request-page-form .btn:disabled {
+	opacity: .6;
+	cursor: wait;
 }
 
 .request-page-form .btn {
@@ -103,6 +140,7 @@
 		font-size: 3.6rem;
 	}
 
+	.request-page-form input,
 	.request-page-form textarea {
 		font-size: 16px;
 	}
