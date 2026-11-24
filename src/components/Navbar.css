@@ -104,11 +104,6 @@
     fill: var(--nt-900);
   }
 
-  .site-nav-close svg {
-    border: 1px solid var(--nt-100);
-    border-radius: 3px;
-  }
-
   .site-nav-overlay {
     position: fixed;
     z-index: 20;
