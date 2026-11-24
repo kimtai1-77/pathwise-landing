@@ -245,12 +245,14 @@
   }
 
   .reference-hero {
-    min-height: 730px;
-    padding-top: 110px;
+    min-height: 0;
+    margin-top: 0;
+    padding: 80px 0 70px;
   }
 
   .reference-hero::after {
-    margin-top: 90px;
+    height: 72px;
+    margin-top: 70px;
   }
 
   .reference-problem,
@@ -258,14 +260,14 @@
   .reference-change,
   .reference-quote,
   .reference-final-cta {
-    min-height: 580px;
-    padding-top: 90px;
+    min-height: 0;
+    padding: 70px 0;
   }
 
   .reference-list-section ol {
-    margin-top: 78px;
+    margin-top: 48px;
     padding-left: 26px;
-    font-size: 1.45rem;
+    font-size: 1.6rem;
   }
 
   .reference-change button {
@@ -283,5 +285,52 @@
 
   .reference-quote blockquote {
     margin-top: 54px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reference-section h1 {
+    margin-bottom: 36px;
+    font-size: 3.2rem;
+  }
+
+  .reference-section h2,
+  .reference-proof h2 {
+    font-size: 2.8rem;
+  }
+
+  .reference-section p {
+    font-size: 1.6rem;
+  }
+
+  .reference-label {
+    margin-bottom: 28px !important;
+  }
+
+  .reference-hero {
+    padding-top: 64px;
+  }
+
+  .reference-problem h2::after {
+    right: -16px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .reference-proof-copy > p:last-child {
+    font-size: 1.6rem;
+  }
+
+  .reference-proof-image {
+    padding: 6px;
+    box-shadow: 5px 5px 0 var(--p-100);
+  }
+
+  .reference-quote blockquote {
+    font-size: 2rem;
+  }
+
+  .reference-final-cta button {
+    margin-top: 40px;
   }
 }

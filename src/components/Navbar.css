@@ -1,4 +1,4 @@
-.site-nav { 
+.site-nav {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -20,19 +20,176 @@
   cursor: pointer;
 }
 
-.site-nav-brand img { display: block; width: 112px; height: auto; }
-.site-nav-links { display: flex; align-items: center; gap: 10px; margin-left: auto; }
-.site-nav-links button, .site-nav-links a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid transparent; border-radius: 3px; color: var(--nt-600); font: inherit; font-size: 15px; font-weight: 600; text-decoration: none; }
-.site-nav-links button { background: transparent; cursor: pointer; }
-.site-nav-links button:hover, .site-nav-links a:hover { border-color: var(--nt-100); background: var(--sc-050); }
+.site-nav-brand img {
+  display: block;
+  width: 112px;
+  height: auto;
+}
 
-@media (max-width: 680px) {
-  .site-nav { min-height: 76px; gap: 16px; }
-  .site-nav-links { gap: 2px; }
-  .site-nav-links button, .site-nav-links a { padding-inline: 8px; font-size: 13px; }
-  .site-nav-links a { display: none; }
+.site-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.site-nav-links button,
+.site-nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: var(--nt-600);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-nav-links button {
+  background: transparent;
+  cursor: pointer;
+}
+
+.site-nav-links button:hover,
+.site-nav-links a:hover {
+  border-color: var(--nt-100);
+  background: var(--sc-050);
+}
+
+.site-nav-menu,
+.site-nav-close {
+  display: none;
+}
+
+.site-nav-overlay,
+.site-nav-drawer {
+  visibility: hidden;
 }
 
 @media (max-width: 760px) {
-  .site-nav { width: min(100% - 36px, 1120px); }
+  .site-nav {
+    width: min(100% - 36px, 1120px);
+    height: 76px;
+    gap: 16px;
+  }
+
+  .site-nav-links {
+    display: none;
+  }
+
+  .site-nav-menu,
+  .site-nav-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .site-nav-menu {
+    margin-left: auto;
+  }
+
+  .site-nav-menu svg,
+  .site-nav-close svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--nt-900);
+  }
+
+  .site-nav-close svg {
+    border: 1px solid var(--nt-100);
+    border-radius: 3px;
+  }
+
+  .site-nav-overlay {
+    position: fixed;
+    z-index: 20;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+    opacity: 0;
+    transition: opacity .25s ease, visibility .25s;
+  }
+
+  .site-nav-overlay.is-open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .site-nav-drawer {
+    position: fixed;
+    z-index: 21;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: min(320px, 85vw);
+    padding: 16px 18px;
+    background: var(--nt-050);
+    box-sizing: border-box;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform .25s ease, visibility .25s;
+  }
+
+  .site-nav-drawer.is-open {
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform .25s ease, visibility 0s;
+  }
+
+  .site-nav-close {
+    align-self: flex-end;
+  }
+
+  .site-nav-drawer-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+
+  .site-nav-drawer-links button,
+  .site-nav-drawer-links a {
+    display: flex;
+    align-items: center;
+    min-height: 52px;
+    padding: 0 12px;
+    border: 0;
+    border-bottom: 1px solid var(--nt-100);
+    background: transparent;
+    color: var(--nt-900);
+    font: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .site-nav-drawer-links button:hover,
+  .site-nav-drawer-links a:hover {
+    background: var(--sc-050);
+  }
+}
+
+@media (max-width: 620px) {
+  .site-nav-brand img {
+    width: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav-overlay,
+  .site-nav-drawer,
+  .site-nav-drawer.is-open {
+    transition: none;
+  }
 }
