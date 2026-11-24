@@ -28,7 +28,7 @@ const Landing = () => {
 
       <section className="reference-section reference-hero">
         <p className="reference-label">ESSENTIAL EIGHT FOR AUSTRALIAN MSPS</p>
-        <h1>Can you confidently say to your customers, "We always catch what would void your policy, and fix it before the broker calls"?</h1>
+        <h1>Can you confidently say to your clients, "We always catch what would void your policy, and fix it before the broker calls"?</h1>
         <p>Request demo to see how it works</p>
         <Btn as="button" type="button" variant="primary" onClick={() => setCurrentPage('request')}>Request demo</Btn>
       </section>
