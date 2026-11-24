@@ -1,6 +1,5 @@
 .inner-page {
 	min-height: 100vh;
-	padding: 9vh 0;
 	background: var(--nt-050);
 	color: var(--nt-900);
 }
@@ -40,6 +39,74 @@
 	line-height: 1.6;
 }
 
+.about-page-intro {
+	display: grid;
+	grid-template-columns: 280px minmax(0, 1fr);
+	align-items: center;
+	gap: 64px;
+	margin-top: 48px;
+}
+
+.about-page-intro-copy {
+	max-width: 572px;
+}
+
+.about-page-intro-copy p {
+	margin: 0;
+	color: var(--nt-600);
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+.about-page-intro-copy .btn {
+	margin-top: 24px;
+}
+
+.about-page-profile {
+	box-sizing: border-box;
+	width: min(100%, 280px);
+	margin: 0;
+	padding: 16px;
+	border: 1px solid var(--nt-100);
+	border-radius: 8px;
+	background: rgba(245, 240, 230, .72);
+}
+
+.about-page-profile-photo {
+	width: 100%;
+	aspect-ratio: 4 / 5;
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 1px solid var(--nt-200);
+	border-radius: 4px;
+	background: var(--nt-100);
+}
+
+.about-page-profile-photo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center top;
+}
+
+.about-page-profile figcaption {
+	display: grid;
+	gap: 4px;
+	margin-top: 16px;
+}
+
+.about-page-profile-name {
+	color: var(--nt-900);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.about-page-profile-role {
+	color: var(--nt-600);
+	font-size: 14px;
+}
+
 .about-page-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -75,6 +142,11 @@
 }
 
 @media (max-width: 620px) {
+	.about-page-intro {
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+
 	.inner-page h1 {
 		font-size: 3.6rem;
 	}

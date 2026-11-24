@@ -29,15 +29,9 @@
 	line-height: 1.02;
 }
 
-.request-page-lead {
-	max-width: 570px;
-	margin: 28px 0 48px;
-	color: var(--nt-600);
-	font-size: 17px;
-}
-
 .request-page-form {
 	display: grid;
+	margin: 28px 0 48px;
 	gap: 12px;
 	max-width: 760px;
 }

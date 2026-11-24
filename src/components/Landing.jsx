@@ -34,12 +34,10 @@ const Landing = () => {
       </section>
 
       <section className="reference-section reference-problem">
-        <p className="reference-section-number">01 / THE PROBLEM</p>
-        <h2>Its not your fault if you can&apos;t</h2>
+        <h2>Its not your fault if you can&apos;t.</h2>
       </section>
 
       <section className="reference-section reference-list-section">
-        <p className="reference-section-number">02 / WHY IT HAPPENS</p>
         <h2>Its just that:</h2>
         <ol>
           <li>The broker needs answers by Wednesday, and you know a wrong answer can void the policy retroactively</li>
@@ -49,7 +47,6 @@ const Landing = () => {
       </section>
 
       <section className="reference-section reference-list-section reference-change">
-        <p className="reference-section-number">03 / THE SHIFT</p>
         <h2>How it all changes:</h2>
         <ol>
           <li>Evidence is now always updated, audit-ready and shareable in one click - not a week's build.</li>
@@ -61,9 +58,7 @@ const Landing = () => {
 
       <section id="how-it-works" className="reference-proof" aria-label="A preview of Pathwise">
         <div className="reference-proof-copy">
-          <p className="reference-section-number">04 / THE VIEW</p>
-          <h2>One clear answer,<br />when it matters.</h2>
-          <p>Pathwise keeps evidence, control status, and risk in one live view your team can trust.</p>
+          <h2>Tracking the human process, <br/>not just the technical evidence.</h2>
         </div>
         <figure className="reference-proof-image">
           <img src={dashboardPreview} alt="Pathwise compliance dashboard showing control status and evidence" />
@@ -72,14 +67,12 @@ const Landing = () => {
       </section>
 
       <section className="reference-section reference-quote">
-        <p className="reference-section-number">05 / THE COST OF WAITING</p>
-        <h2>Don&apos;t be this person again</h2>
-        <blockquote>&quot;Last renewal we had a carrier come back three days before the deadline asking for backup retention proof and we were the ones digging through two platforms at 9pm to piece it together.&quot;</blockquote>
+        <h2>Because this should not be you:</h2>
+        <blockquote>"Last renewal we had a carrier come back three days before the deadline asking for backup retention proof and we were the ones digging through two platforms at 9pm to piece it together."</blockquote>
       </section>
 
       <section className="reference-section reference-final-cta">
-        <p className="reference-section-number">06 / WHAT&apos;S NEXT</p>
-        <h2>Be the MSP clients love to pay</h2>
+        <h2>Be the MSP who doesn't scramble</h2>
         <Btn as="button" type="button" variant="primary" onClick={() => setCurrentPage('request')}>Request demo</Btn>
       </section>
     </main>

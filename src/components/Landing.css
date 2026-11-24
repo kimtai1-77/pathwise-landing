@@ -73,8 +73,7 @@
   font-size: 1.4rem;
 }
 
-.reference-label,
-.reference-section-number {
+.reference-label {
   color: var(--p-500);
   font-size: 1.1rem !important;
   font-weight: 700;
@@ -84,10 +83,6 @@
 
 .reference-label {
   margin-bottom: 42px !important;
-}
-
-.reference-section-number {
-  margin-bottom: 26px !important;
 }
 
 .reference-hero {
@@ -107,22 +102,6 @@
 .reference-problem {
   min-height: 690px;
   padding-top: 150px;
-}
-
-.reference-problem h2 {
-  position: relative;
-  display: inline-block;
-}
-
-.reference-problem h2::after {
-  position: absolute;
-  right: -34px;
-  bottom: 4px;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: var(--t-300);
-  content: '';
 }
 
 .reference-list-section {
@@ -225,7 +204,6 @@
   margin-bottom: 0;
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(1.8rem, 2.7vw, 2.65rem);
-  font-weight: 700;
   line-height: 1.25;
 }
 
@@ -309,12 +287,6 @@
 
   .reference-hero {
     padding-top: 64px;
-  }
-
-  .reference-problem h2::after {
-    right: -16px;
-    width: 8px;
-    height: 8px;
   }
 
   .reference-proof-copy > p:last-child {

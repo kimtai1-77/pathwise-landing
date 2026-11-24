@@ -6,12 +6,9 @@ const ContactPage = ({ onNavigate, onBack }) => {
   return (
     <main className="contact-page">
       <Navbar onNavigate={onNavigate} />
-      <section className="contact-page-card">
+      <section className="contact-page-content">
         <p className="contact-page-kicker">Contact us</p>
-        <h1>Let's talk about the work.</h1>
-        <p className="contact-page-message">
-          Reach out if you want to learn more about Pathwise or talk through your Essential Eight compliance workflow.
-        </p>
+        <h1>Let's talk.</h1>
         <a href="mailto:support@pathwise.systems" className="contact-page-email">
           support@pathwise.systems
         </a>
