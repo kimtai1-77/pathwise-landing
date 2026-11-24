@@ -1,0 +1,287 @@
+.reference-home {
+  min-height: 100vh;
+  overflow: clip;
+  background: var(--nt-050);
+  color: var(--nt-900);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.reference-home::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  opacity: .42;
+  background-image: linear-gradient(to right, rgba(84, 62, 30, .055) 1px, transparent 1px), linear-gradient(to bottom, rgba(84, 62, 30, .055) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, black, transparent 74%);
+}
+
+.reference-home > * {
+  position: relative;
+  z-index: 1;
+}
+
+.reference-section,
+.reference-proof {
+  width: min(100% - 64px, 1120px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reference-section h1,
+.reference-section h2,
+.reference-proof h2 {
+  color: var(--nt-900);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -.045em;
+}
+
+.reference-section h1,
+.reference-section h2,
+.reference-section p,
+.reference-section ol,
+.reference-section blockquote,
+.reference-proof h2,
+.reference-proof p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reference-section h1 {
+  max-width: 1030px;
+  margin-top: 0;
+  margin-bottom: 66px;
+  font-size: clamp(2.8rem, 4.5vw, 4.8rem);
+  line-height: 1.08;
+}
+
+.reference-section h2,
+.reference-proof h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: clamp(2.5rem, 4vw, 4.3rem);
+  line-height: 1.1;
+}
+
+.reference-section p {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.4rem;
+}
+
+.reference-label,
+.reference-section-number {
+  color: var(--p-500);
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.reference-label {
+  margin-bottom: 42px !important;
+}
+
+.reference-section-number {
+  margin-bottom: 26px !important;
+}
+
+.reference-hero {
+  min-height: 850px;
+  margin-top: 92px;
+}
+
+.reference-hero::after {
+  display: block;
+  width: 1px;
+  height: 110px;
+  margin: 120px auto 0;
+  background: var(--sc-200);
+  content: '';
+}
+
+.reference-problem {
+  min-height: 690px;
+  padding-top: 150px;
+}
+
+.reference-problem h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.reference-problem h2::after {
+  position: absolute;
+  right: -34px;
+  bottom: 4px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--t-300);
+  content: '';
+}
+
+.reference-list-section {
+  min-height: 700px;
+  padding-top: 96px;
+}
+
+.reference-list-section ol {
+  max-width: 860px;
+  margin-top: 126px;
+  margin-bottom: 0;
+  padding-left: 32px;
+  text-align: left;
+  font-size: 1.7rem;
+  line-height: 1.55;
+}
+
+.reference-list-section li {
+  padding: 19px 0 19px 10px;
+}
+
+.reference-list-section li + li {
+  border-top: 1px solid var(--nt-100);
+}
+
+.reference-list-section li:last-child {
+  border-bottom: 1px solid var(--nt-100);
+}
+
+.reference-change {
+  min-height: 810px;
+  padding-top: 100px;
+}
+
+.reference-change ol {
+  margin-top: 126px;
+}
+
+.reference-change button {
+  margin-top: 96px;
+}
+
+.reference-proof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+  padding: 96px 0 112px;
+  border-block: 1px solid var(--nt-100);
+  text-align: center;
+}
+
+.reference-proof-copy h2 {
+  margin-left: auto;
+  font-size: clamp(2.8rem, 4vw, 4.5rem);
+}
+
+.reference-proof-copy > p:last-child {
+  max-width: 340px;
+  margin: 25px auto 0;
+  color: var(--nt-500);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.reference-proof-image {
+  width: min(100%, 980px);
+  min-width: 0;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--nt-100);
+  background: rgba(245, 240, 230, .72);
+  box-shadow: 12px 12px 0 var(--p-100);
+}
+
+.reference-proof-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--nt-200);
+}
+
+.reference-proof-image figcaption {
+  padding: 11px 2px 0;
+  color: var(--nt-500);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.reference-quote {
+  min-height: 800px;
+  padding-top: 124px;
+}
+
+.reference-quote blockquote {
+  max-width: 1050px;
+  margin-top: 70px;
+  margin-bottom: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.8rem, 2.7vw, 2.65rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.reference-final-cta {
+  min-height: 620px;
+  padding-top: 120px;
+}
+
+.reference-final-cta button {
+  margin-top: 72px;
+}
+
+@media (max-width: 760px) {
+  .reference-section,
+  .reference-proof {
+    width: min(100% - 36px, 1120px);
+  }
+
+  .reference-hero {
+    min-height: 730px;
+    padding-top: 110px;
+  }
+
+  .reference-hero::after {
+    margin-top: 90px;
+  }
+
+  .reference-problem,
+  .reference-list-section,
+  .reference-change,
+  .reference-quote,
+  .reference-final-cta {
+    min-height: 580px;
+    padding-top: 90px;
+  }
+
+  .reference-list-section ol {
+    margin-top: 78px;
+    padding-left: 26px;
+    font-size: 1.45rem;
+  }
+
+  .reference-change button {
+    margin-top: 70px;
+  }
+
+  .reference-proof {
+    gap: 44px;
+    padding: 70px 0;
+  }
+
+  .reference-proof-image {
+    box-shadow: 8px 8px 0 var(--p-100);
+  }
+
+  .reference-quote blockquote {
+    margin-top: 54px;
+  }
+}
