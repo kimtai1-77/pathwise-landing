@@ -1,5 +1,5 @@
 import './AboutPage.css';
-import profilePic from '../assets/2.jpg';
+import profilePic from '../assets/profile pic.jpg';
 import Btn from './Btn';
 import Navbar from './Navbar';
 
@@ -17,8 +17,8 @@ const AboutPage = ({ onNavigate, onBack }) => (
             <img src={profilePic} alt="Profile portrait" />
           </div>
           <figcaption>
-            <span className="about-page-profile-name">Marc Jacob</span>
-            <span className="about-page-profile-role">Founder, Pathwise Systems</span>
+            <span className="about-page-profile-name">Martin Mbae</span>
+            <span className="about-page-profile-role">Founder</span>
           </figcaption>
         </figure>
         <div className="about-page-intro-copy">
@@ -26,8 +26,8 @@ const AboutPage = ({ onNavigate, onBack }) => (
             Halfway through a GRC course at Macquarie, I saw how MSPs wasted time chasing evidence from
             4 or 5 places, just to get through the audit - M365 for MFA, endpoint for EDR, backup for
             coverage status...<br /><br />
-            With the alternative being paying 10k for complex solutions that only gather technical
-            evidence, leaving you to rely on Excel for business processes.<br /><br />
+            The alternative - an expensive solution that only gathers technical
+            evidence, leaving you with spreadsheets for business processes.<br /><br />
             So I built Pathwise Systems - a tool that collects evidence, keeps it always updated and
             handles business processes for a fraction of the cost.<br /><br />
             Would you like to try it?
