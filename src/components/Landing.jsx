@@ -69,7 +69,7 @@ const Landing = () => {
           <li>Evidence is now always updated, audit-ready and shareable in one click - not a week's build.</li>
           <li>You reduce compliance costs by removing time taken to reconcile spreadsheets</li>
           <li>
-            You can now generate recurring revenue from the service. Not a new service - the same service,
+            You can now generate recurring revenue from Essential Eight. Not a new service - the same service,
             delivered differently.
           </li>
         </ol>
