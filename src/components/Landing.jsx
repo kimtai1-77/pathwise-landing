@@ -69,8 +69,8 @@ const Landing = () => {
           <li>Evidence is now always updated, audit-ready and shareable in one click - not a week's build.</li>
           <li>You reduce compliance costs by removing time taken to reconcile spreadsheets</li>
           <li>
-            You can now turns the project into a subscription. Not a new service - the same service,
-            only this time your client finds it reassuring.
+            You can now generate recurring revenue from the service. Not a new service - the same service,
+            delivered differently.
           </li>
         </ol>
         <Btn as="button" type="button" variant="primary" onClick={() => setCurrentPage('request')}>
