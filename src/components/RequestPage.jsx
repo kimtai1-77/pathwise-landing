@@ -60,7 +60,7 @@ const RequestPage = ({ onNavigate, onBack }) => {
       <Navbar onNavigate={onNavigate} />
       <section className="request-page-shell">
         <p className="request-page-kicker">Request a demo</p>
-        <h2>Get a single place where all the evidence already lives, tagged to the control.</h2>
+        <h2>Get a single place where all the evidence already lives, updated and tagged to the control.</h2>
         <form className="request-page-form" onSubmit={handleSubmit} noValidate>
           <label htmlFor="demo-name">Name</label>
           <input
