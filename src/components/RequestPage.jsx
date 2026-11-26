@@ -61,8 +61,8 @@ const RequestPage = ({ onNavigate, onBack }) => {
       <section className="request-page-shell">
         <p className="request-page-kicker">Request a demo</p>
         <h2>Get a single place where all the evidence already lives, updated and tagged to the control.</h2>
-        <form className="request-page-form" onSubmit={handleSubmit} noValidate>
-          <label htmlFor="demo-name">Name</label>
+        <form className="request-page-form" onSubmit={handleSubmit}>
+          <label htmlFor="demo-name">Name <span className="request-page-required" aria-hidden="true">*</span></label>
           <input
             id="demo-name"
             name="name"
@@ -76,7 +76,21 @@ const RequestPage = ({ onNavigate, onBack }) => {
           {errors.name && (
             <span className="request-page-error" id="demo-name-error">{errors.name}</span>
           )}
-          <label htmlFor="demo-email">Email address</label>
+          <label htmlFor="demo-company">Company / Website <span className="request-page-required" aria-hidden="true">*</span></label>
+          <input
+            id="demo-company"
+            name="company"
+            type="text"
+            autoComplete="organization"
+            required
+            maxLength={200}
+            aria-invalid={Boolean(errors.company)}
+            aria-describedby={errors.company ? 'demo-company-error' : undefined}
+          />
+          {errors.company && (
+            <span className="request-page-error" id="demo-company-error">{errors.company}</span>
+          )}
+          <label htmlFor="demo-email">Email address <span className="request-page-required" aria-hidden="true">*</span></label>
           <input
             id="demo-email"
             name="email"
@@ -90,7 +104,7 @@ const RequestPage = ({ onNavigate, onBack }) => {
           {errors.email && (
             <span className="request-page-error" id="demo-email-error">{errors.email}</span>
           )}
-          <label htmlFor="demo-message">Your message</label>
+          <label htmlFor="demo-message">Your message <span className="request-page-required" aria-hidden="true">*</span></label>
           <textarea
             id="demo-message"
             name="message"

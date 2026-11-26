@@ -29,7 +29,7 @@ export async function handleDemoRequest(request, env, send = fetch) {
         to: ['support@pathwise.systems'],
         reply_to: values.email,
         subject: 'Demo request',
-        text: `Name: ${values.name}\nEmail: ${values.email}\n\n${values.message}`,
+        text: `Name: ${values.name}\n${values.company ? `Company: ${values.company}\n` : ''}Email: ${values.email}\n\n${values.message}`,
       }),
     });
 

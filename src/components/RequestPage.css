@@ -42,6 +42,10 @@
 	font-weight: 700;
 }
 
+.request-page-required {
+	color: #b42318;
+}
+
 .request-page-form input,
 .request-page-form textarea {
 	box-sizing: border-box;
