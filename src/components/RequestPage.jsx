@@ -98,7 +98,7 @@ const RequestPage = ({ onNavigate, onBack }) => {
             maxLength={10000}
             aria-invalid={Boolean(errors.message)}
             aria-describedby={errors.message ? 'demo-message-error' : undefined}
-            defaultValue={'Hi,\n\nI would like to request a demo.\n\nThank you,'}
+            defaultValue={'Hi,\n\nI would like to request a demo.\n\nThank you.'}
           />
           {errors.message && (
             <span className="request-page-error" id="demo-message-error">{errors.message}</span>
