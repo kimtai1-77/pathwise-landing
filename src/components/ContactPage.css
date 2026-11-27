@@ -25,23 +25,34 @@
 
 .contact-page-content h1 {
   max-width: 900px;
-  margin: 0 0 66px;
+  margin: 0 0 18px;
   color: var(--nt-900);
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(2.8rem, 4.5vw, 4.8rem);
   line-height: 1.08;
 }
 
+.contact-page-content .request-page-form {
+  width: 100%;
+  margin: 16px 0 0;
+  text-align: left;
+}
+
 .contact-page-email {
+  margin: 28px 0 0;
   max-width: 100%;
-  color: var(--p-600);
-  font-size: 1.4rem;
-  font-weight: 700;
+  color: var(--nt-500);
+  font-size: 13px;
   overflow-wrap: anywhere;
+}
+
+.contact-page-email a {
+  color: var(--p-600);
+  font-weight: 700;
   text-decoration: none;
 }
 
-.contact-page-email:hover {
+.contact-page-email a:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -69,7 +80,7 @@
   }
 
   .contact-page-content h1 {
-    margin-bottom: 36px;
+    margin-bottom: 18px;
     font-size: 3.2rem;
   }
 }
